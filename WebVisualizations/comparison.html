@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ 	<head>
+    		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<scriptsrc="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<title>Bootstrap Visualization Dashboard</title>
+<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+<body>
+<!-- Start of Navigation Bar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <span class="navbar-toggler-icon"></span>
+    </button>
+<!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+      	    <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+    		    </div>
+		    </li>
+            <li class="nav-item">
+	            <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+    		<li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+			</li>
+        </ul>
+    </div>
+    </nav>
+        </div>
+<!-- End of Navigation Bar -->
+
+<!-- Start of Container (Latitude vs. X) -->​   
+<div class="container">
+    <section class="row">
+      <div>
+        <div class="description-content">
+          <h1 class="description-header">Comparison: Latitude vs X</h1>
+          <hr>
+        <p>Click any plot to get an in-depth analysis.</p>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <section>
+            <article>
+            <p><strong>vs. Max Temperature:</strong></p>
+            <a target="_blank" href="temperature.html">
+              <img class="img-fluid" src="assets/Fig1.png" alt="City Latitude vs. Max Temperature">
+            </a>
+            </article>
+          </section>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <section>
+            <article>
+            <p><strong>vs. Humidity:</strong></p>
+            <a target="_blank" href="humidity.html">
+                <img class="img-fluid" src="assets/Fig2.png" alt="City Latitude vs. Humidity">
+              </a>
+            </article>
+          </section>
+        </div>
+      </div> 
+    <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <section> 
+        <article>
+        <p><strong>vs. Cloudness:</strong></p>
+          <a target="_blank" href="cloudiness.html">
+            <img class="img-fluid" src="assets/Fig3.png" alt="City Latitude vs. Cloudiness">
+          </a>
+        </article>
+      </section>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <section>
+        <article>
+        <p><strong>vs. Wind Speed:</strong></p>
+          <a target="_blank" href="wind_speed.html">
+            <img class="img-fluid" src="assets/Fig4.png" alt="City Latitude vs. Wind Speed">
+          </a>
+        </article>
+      </section>
+    </div>
+    </div>
+    </div>
+<!-- End of Container (Latitude vs. X) -->​
+<!-- Start of footer -->
+    <footer>
+        <div class="footer">&copy; Created by Shamil Tajuddin &infin; RIP Kobe</div>
+    </footer>
+<!-- End of footer -->
+    </body>
+
+</html>
